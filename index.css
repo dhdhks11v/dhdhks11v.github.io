@@ -51,6 +51,18 @@ p
 	text-align: center;
 }
 
+.myEun
+{
+	display: block;	
+	margin: 0px auto;
+	border-radius: 20px;
+}
+
+video
+{
+	height: 300px;
+}
+
 div
 {
 	margin-bottom: 5px;
