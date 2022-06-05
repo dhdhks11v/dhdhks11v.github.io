@@ -8,49 +8,31 @@
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <div id="myHeader">
-        </div>
-        <div id="myNav">
-            <nav>
-                <ul>
-                    <li><a href="./computer.html">Home</a></li>
-                    <li><a href="./kindergarden.html">유치원 사진</a></li>
-                    <li><a href="./daily.html">일상 사진</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div id="myHeader"></div>
+        <div id="myNav"></div>
         <div id="mySection">
+            <!--
             <section id="main">
                 <article>
                     <iframe name="contents" src="computer.html" frameborder="0"></iframe>
                 </article>
             </section>
+            -->
         </div>
-        <div id="myFooter">
-            <footer>
-                Copyright &copy; 2022 Wan Oh
-            </footer>
-        </div>
+        
+        <div id="myFooter"></div>
 
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
         <script src="/pages/news/maxNewsCnt.js"></script>
         <script type="text/javascript">
-
-            $(document).ready(function(){
-                                $("#myHeader").load("/header.html")
-                                $("#sidebar").load("/sidebar.html")
-
-                                $('#latestNews').append('<div id="news0" class="card proj" style="background-color:rgba(0,0,0,0.9)"></div>')
-                                $('#news0').load('/pages/news/news0.html') 
-
-                                for (newsIndex = maxNewsCnt; newsIndex > maxNewsCnt - 5; newsIndex--) {
-                                                    $('#latestNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
-                                                    $('#news'+newsIndex).load('/pages/news/news'+newsIndex+'.html') 
-                                                }
-
-                            });
+            $(document).ready(function()
+            {
+                $("#myHeader").load("/header.html")
+                $("#myNav").load("/nav.html")
+                $("#myFooter").load("/footer.html")
+            });
         </script>
     </body>
 </html>
