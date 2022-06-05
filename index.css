@@ -46,6 +46,11 @@ nav ul li a
     text-transform: uppercase;
 }
 
+p
+{
+	text-align: center;
+}
+
 div
 {
 	margin-bottom: 5px;
