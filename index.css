@@ -46,9 +46,25 @@ nav ul li a
     text-transform: uppercase;
 }
 
-div.contents
+div
 {
 	margin-bottom: 5px;
+}
+
+.myKindergardenPicture
+{
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin-left: 5px;	
+}
+
+.myDailyPicture
+{
+	width: 200px;
+	height: 300px;
+	float: left;
+	margin-left: 5px;
 }
 
 footer
@@ -60,22 +76,4 @@ footer
     color: white;
     text-align: center;
     padding: 1em 0px;
-}
-
-.myKindergardenPicture
-{
-	width: 250px;
-	height: 250px;
-	float: left;
-	margin-left: 5px;
-	margin-top: 5px;
-}
-
-.myDailyPicture
-{
-	width: 200px;
-	height: 300px;
-	float: left;
-	margin-left: 5px;
-	margin-top: 5px;
 }
