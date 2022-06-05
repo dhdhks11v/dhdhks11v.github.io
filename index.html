@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  </head>
-  <body>
-    <div id="app">
-      {{ message }}
-    </div>
-    <script src="index.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>eunsnote</title>
+
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div id="myHeader">
+            <header>
+                <h1>
+                    <img src="./images/shop.png" alt="eunsnote" width="50" height="50">
+                </h1>
+            </header>
+        </div>
+        <div id="myNav">
+            <nav>
+                <ul>
+                    <li><a href="./computer.html">Home</a></li>
+                    <li><a href="./kindergarden.html">유치원 사진</a></li>
+                    <li><a href="./daily.html">일상 사진</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mySection">
+            <section id="main">
+                <article>
+                    <iframe name="contents" src="computer.html" frameborder="0"></iframe>
+                </article>
+            </section>
+        </div>
+        <div id="myFooter">
+            <footer>
+                Copyright &copy; 2022 Wan Oh
+            </footer>
+        </div>
+    </body>
 </html>

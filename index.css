@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 화면에 너무 붙어 있어서...  */
+body
+{
+    background-color: #eef7ff;
+}
+ 
+/* header 영역  */
+header
+{
+	padding: 35px;
+}
+ 
+header a
+{
+	text-decoration: none;
+	color: #333333;
+}
+ 
+/* nav 영역 */
+nav
+{
+	background-color: white;
+}
+ 
+nav ul
+{
+    list-style: none;
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+    text-align: center;
+}
+ 
+nav ul li
+{
+    display: inline;
+    letter-spacing: .3em;
+    margin-left: 2em;
+}
+ 
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+
+/* 가운데 본문 영역 */
+section#main
+{
+    float: left;
+	margin-bottom: 5px;
+}
+
+iframe
+{
+	display: block;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* footer영역 */
+footer
+{
+	margin: 30px;
+	background-color: #3f7ff5;
+	border-radius: 20px;
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 1em 0px;
+}
+
+.kPicture
+{
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.dPicture
+{
+	width: 200px;
+	height: 300px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}

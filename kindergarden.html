@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>eunsnote</title>
+
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                <img src="./images/shop.png" alt="eunsnote" width="50" height="50">
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./computer.html" target="contents">Home</a></li>
+                <li><a href="./kindergarden.html">유치원 사진</a></li>
+                <li><a href="./daily.html" target="contents">일상 사진</a></li>
+            </ul>
+        </nav>
+        <section id="main">
+            <article>
+                <div id="myKindergarden">
+                    <script src="./kindergarden/kindergarden.js"></script>
+                    <script type="text/javascript">
+                        var myKindergarden = document.getElementById("myKindergarden");
+                        
+                        for (aCount = 1; aCount <= myCount; aCount++)
+                        {
+                            var myDiv = document.createElement("div");
+                            myDiv.setAttribute("class", "kPicture");
+            
+                            var myImg = document.createElement("img");
+                            myImg.setAttribute("src", "./kindergarden/" + aCount + ".jpg");
+                            myImg.setAttribute("width", 250);
+                            myImg.setAttribute("height", 250);
+                            
+                            myDiv.appendChild(myImg);
+                            myKindergarden.appendChild(myDiv);
+                        }
+                    </script>
+                </div>
+            </article>
+        </section>
+        <footer>
+            Copyright &copy; 2022 Wan Oh
+        </footer>
+    </body>
+</html>
