@@ -46,9 +46,8 @@ nav ul li a
     text-transform: uppercase;
 }
 
-section
+div.contents
 {
-    float: left;
 	margin-bottom: 5px;
 }
 
@@ -63,7 +62,7 @@ footer
     padding: 1em 0px;
 }
 
-#myKindergarden
+.myKindergardenPicture
 {
 	width: 250px;
 	height: 250px;
@@ -72,7 +71,7 @@ footer
 	margin-top: 5px;
 }
 
-#myDailyPicture
+.myDailyPicture
 {
 	width: 200px;
 	height: 300px;
