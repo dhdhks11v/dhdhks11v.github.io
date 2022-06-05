@@ -9,11 +9,6 @@
     </head>
     <body>
         <div id="myHeader">
-            <header>
-                <h1>
-                    <img src="./images/shop.png" alt="eunsnote" width="50" height="50">
-                </h1>
-            </header>
         </div>
         <div id="myNav">
             <nav>
@@ -36,5 +31,26 @@
                 Copyright &copy; 2022 Wan Oh
             </footer>
         </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script src="/pages/news/maxNewsCnt.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                                $("#myHeader").load("/header.html")
+                                $("#sidebar").load("/sidebar.html")
+
+                                $('#latestNews').append('<div id="news0" class="card proj" style="background-color:rgba(0,0,0,0.9)"></div>')
+                                $('#news0').load('/pages/news/news0.html') 
+
+                                for (newsIndex = maxNewsCnt; newsIndex > maxNewsCnt - 5; newsIndex--) {
+                                                    $('#latestNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
+                                                    $('#news'+newsIndex).load('/pages/news/news'+newsIndex+'.html') 
+                                                }
+
+                            });
+        </script>
     </body>
 </html>
