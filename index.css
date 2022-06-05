@@ -51,17 +51,10 @@ nav ul li a
 }
 
 /* 가운데 본문 영역 */
-section#main
+section#myContents
 {
     float: left;
 	margin-bottom: 5px;
-}
-
-iframe
-{
-	display: block;
-	width: 100vw;
-	height: 100vh;
 }
 
 /* footer영역 */

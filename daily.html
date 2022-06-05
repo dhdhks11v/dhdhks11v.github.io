@@ -8,44 +8,42 @@
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <header>
-            <h1>
-                <img src="./images/shop.png" alt="eunsnote" width="50" height="50">
-            </h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="./computer.html" target="contents">Home</a></li>
-                <li><a href="./kindergarden.html">유치원 사진</a></li>
-                <li><a href="./daily.html" target="contents">일상 사진</a></li>
-            </ul>
-        </nav>
-        <section id="main">
-            <article>
-                <div id="myDaily">
-                    <script src="./daily/daily.js"></script>
-                    <script type="text/javascript">
-                        var myKindergarden = document.getElementById("myDaily");
+        <div id="myHeader"></div>
+        <div id="myNav"></div>
+        <div id="myContents">
+            <div id="myDaily">
+                <script src="./daily/daily.js"></script>
+                <script type="text/javascript">
+                    var myKindergarden = document.getElementById("myDaily");
+                    
+                    for (aCount = 1; aCount <= myCount; aCount++)
+                    {
+                        var myDiv = document.createElement("div");
+                        myDiv.setAttribute("class", "dPicture");
+        
+                        var myImg = document.createElement("img");
+                        myImg.setAttribute("src", "./daily/" + aCount + ".jpg");
+                        myImg.setAttribute("width", 200);
+                        myImg.setAttribute("height", 300);
                         
-                        for (aCount = 1; aCount <= myCount; aCount++)
-                        {
-                            var myDiv = document.createElement("div");
-                            myDiv.setAttribute("class", "dPicture");
-            
-                            var myImg = document.createElement("img");
-                            myImg.setAttribute("src", "./daily/" + aCount + ".jpg");
-                            myImg.setAttribute("width", 200);
-                            myImg.setAttribute("height", 300);
-                            
-                            myDiv.appendChild(myImg);
-                            myKindergarden.appendChild(myDiv);
-                        }
-                    </script>
-                </div>
-            </article>
-        </section>
-        <footer>
-            Copyright &copy; 2022 Wan Oh
-        </footer>
+                        myDiv.appendChild(myImg);
+                        myKindergarden.appendChild(myDiv);
+                    }
+                </script>
+            </div>
+        </div>
+        <div id="myFooter"></div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script src="/pages/news/maxNewsCnt.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("#myHeader").load("/header.html")
+                $("#myNav").load("/nav.html")
+                $("#myFooter").load("/footer.html")
+            });
+        </script>
     </body>
 </html>
