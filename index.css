@@ -58,14 +58,14 @@ p
 	border-radius: 20px;
 }
 
-video
-{
-	width: 400px;
-}
-
 div
 {
 	margin-bottom: 5px;
+}
+
+#myVideo
+{
+	width: 400px;
 }
 
 .myKindergardenPicture
